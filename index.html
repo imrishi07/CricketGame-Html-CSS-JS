@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="Assets/Stump.png" type="image/png" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Cricket Game</title>
+  </head>
+  <body>
+    <div class="game-container">
+      <div class="left-box">
+        <div class="game-content">
+          <div class="background-img">
+            <img class="icon-img1 img-size" src="Assets/Stump.png" alt="img1" />
+          </div>
+          <h1>Cricket Game.</h1>
+          <h3>'Bat' 'Ball' 'Stump' What will you choice ?</h3>
+        </div>
+        <div class="play-button">
+          <button
+            class="choice-button"
+            onclick="
+          //Player Choice
+          SelectplayerChoice(bat);
+
+          //Cumputer Choice
+          generateComputerChoice();
+
+          //Result
+          generateResult(playerChoice, computerChoice);
+
+          "
+          >
+            🏏Bat
+          </button>
+
+          <button
+            class="choice-button"
+            onclick="
+          //Player Choice
+          SelectplayerChoice(ball);
+
+          //Computer Choice
+          generateComputerChoice();
+
+          //Result
+          generateResult(playerChoice, computerChoice)
+
+          "
+          >
+            🔴Ball
+          </button>
+
+          <button
+            class="choice-button"
+            onclick="
+          //Player Choice
+          SelectplayerChoice(stump);
+          
+          //Computer Choice
+          generateComputerChoice(); 
+
+          //Result
+          generateResult(playerChoice, computerChoice)
+
+          "
+          >
+            🖍️Stump
+          </button>
+        </div>
+      </div>
+
+      <div class="Result-box">
+        <input
+          type="text"
+          class="score player-choice"
+          placeholder="Player Choice"
+          readonly
+        />
+        <input
+          type="text"
+          class="score computer-choice"
+          placeholder="Computer Choice"
+          readonly
+        />
+        <input
+          type="text"
+          class="score win-lose"
+          placeholder="Result"
+          readonly
+        />
+        <div class="score-result-container">
+          <div class="score-container">
+            <div class="score-win">🏆 0</div>
+            <div class="score-loss">👎 0</div>
+            <div class="score-draw">😟 0</div>
+          </div>
+
+          <button class="refresh-score" onclick="clearScore();">
+            <img src="Assets/refresh-png.png" alt="refresh-score" />
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>

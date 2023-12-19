@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: aliceblue;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  border: 5px solid white;
+  border-radius: 5px;
+}
+
+h1,
+h3 {
+  margin-bottom: 20px;
+}
+
+input {
+  outline: none;
+}
+
+input::placeholder {
+  color: #ffffff50;
+}
+
+.choice-button {
+  background-color: aliceblue;
+  color: black;
+
+  padding: 12px 24px;
+  border-radius: 5px;
+
+  border: 0;
+  outline: 0;
+
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 2px 2px 5px #00000050;
+
+  cursor: pointer;
+
+  /* transition: 0.5s ease-in-out; */
+}
+
+.choice-button:hover {
+  background-color: #ce5a67;
+  color: #fff;
+}
+
+.choice-button:active {
+  background-color: #f4bf96;
+  color: #fff;
+}
+
+.game-container {
+  width: 100%;
+  height: 100%;
+
+  position: relative;
+  padding: 40px;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  border-radius: 50px;
+  border: 2px solid white;
+  box-shadow: 2px 2px 5px #00000050;
+  background-color: #1f1717;
+}
+
+.game-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.play-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.Result-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.score {
+  width: 400px;
+  height: 60px;
+
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 12px 24px;
+  background-color: #ce5a67;
+  text-align: center;
+  color: #ffffff;
+
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.background-img {
+  position: relative;
+}
+
+.img-size {
+  width: 50px;
+  height: 50px;
+}
+
+.score-container {
+  width: 400px;
+  height: 60px;
+  background-color: #f4bf96;
+
+  border: 2px solid white;
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.score-container div {
+  color: #1f1717;
+}
+
+.score-result-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-left: 68px;
+  gap: 10px;
+}
+
+.refresh-score {
+  width: 60px;
+  height: 60px;
+  background-color: #ce5a67;
+  border-radius: 5px;
+  border: 2px solid white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+.refresh-score img {
+  width: 24px;
+  height: 24px;
+}
